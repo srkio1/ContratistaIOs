@@ -8,6 +8,7 @@
             <ListView.ItemTemplate  >
                 <DataTemplate>
                     <ViewCell >
+                        <!--//cambios-->
                         <Frame CornerRadius="5" HasShadow="True" Margin="5">
                             <Grid Padding="5" BackgroundColor="White">
                                 <Grid.RowDefinitions>
