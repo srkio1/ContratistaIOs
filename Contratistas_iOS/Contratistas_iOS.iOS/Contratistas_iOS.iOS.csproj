@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{50CF7DC7-6D90-4B63-A29A-184A675FE9AF}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Contratistas_iOS.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Contratistas_iOS.iOS</AssemblyName>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>
+    </CodesignEntitlements>
+    <CodesignProvision />
+    <CodesignExtraArgs />
+    <CodesignResourceRules />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <BuildIpa>True</BuildIpa>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CardsView">
+      <Version>2.4.0</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator">
+      <Version>17.3.0.34</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfRotator">
+      <Version>17.3.0.34</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Connectivity">
+      <Version>3.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Media">
+      <Version>4.0.1.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Essentials">
+      <Version>1.3.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Contratistas_iOS\Contratistas_iOS.csproj">
+      <Project>{334119F8-9909-4DCD-96D8-B12A01E97D22}</Project>
+      <Name>Contratistas_iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_pretensados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_tuberias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_operador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_jardinero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_servicios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_star_calificacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_carpintero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_equipo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_maquinaria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_albanil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_mantenimiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_constructora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_llamar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_vehiculo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_manual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_aire_acondicionado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_contratistas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_cemento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_barraca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_electricista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_transporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_soldador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_terminosycondiciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_plomero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_material.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_profesional.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_iniciar_sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_contactanos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_diseno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_aridos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_herramienta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\ic_action_developer_board.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_cerrajero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_ceramica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_pintor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_vidriero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_ferreteria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_ladrillo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_vidrieria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_portafolio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_empresas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_app_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_mod5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_mod1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_mod2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_mod6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_mod3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_mod4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_mod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_mod7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_cables.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_whatsapp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_acero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\images\icon_star_calificacion_vacia.png" />
+  </ItemGroup>
+</Project>
